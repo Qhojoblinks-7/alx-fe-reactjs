@@ -172,6 +172,7 @@ This project introduces essential elements of React. By engaging with these task
 
 ---
 
+
 This project provides a fundamental introduction to React's core concepts, giving you hands-on experience with JSX, components, and props. By completing these tasks, you’ll have a strong base to further explore the capabilities of React!
 
 # React + Vite
