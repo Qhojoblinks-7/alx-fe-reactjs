@@ -9,7 +9,7 @@ import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 import UserProfile from './components/UserProfile';
 import MusicPlayer from './components/MusicPlayer';
-{/*import Counter from './components/Counter';*/}
+import Counter from './components/Counter';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +22,7 @@ function App() {
       <UserProfile name='Alice' age='25' bio="Loves hiking and photography" />
       <Footer />
       <MusicPlayer />
-      {/*<Counter />*/}
+      <Counter />
     </div>
   )
 }
