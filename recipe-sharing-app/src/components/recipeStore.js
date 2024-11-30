@@ -1,23 +1,27 @@
 import { create } from 'zustand';
-import {persist } from 'zustand/middleware'
+import { persist } from 'zustand/middleware';
 
-//define the store for managing the receipts
-const useRecipeStore = create(
-    persist(
-        (set) => ({
-            receipts: [],
-            //function to add a new receipt
-            addRecipe: (receipt) => set((state) => ({receipts: [...state.receipts, receipt] })),
-            //function tro remove a receipt by index
-            removeReceipt: (index) => set((state) => ({receipts: state.receipts.filter((_, i) => i !== index) } )),
-            setRecipes: (recipes) => set({ recipes })
-
-        }),
-        {
-            name: 'receipt-storage', //name for localStorage
-            getStorage: () => localStorage, 
-        }
-    )
+export const useRecipeStore = create(
+  persist(
+    (set) => ({
+      recipes: [],
+      addRecipe: (recipe) =>
+        set((state) => ({
+          recipes: [...state.recipes, { ...recipe, id: Date.now() }],
+        })),
+      editRecipe: (id, updatedRecipe) =>
+        set((state) => ({
+          recipes: state.recipes.map((recipe) =>
+            recipe.id === id ? { ...recipe, ...updatedRecipe } : recipe
+          ),
+        })),
+      deleteRecipe: (id) =>
+        set((state) => ({
+          recipes: state.recipes.filter((recipe) => recipe.id !== id),
+        })),
+    }),
+    { name: 'recipe-store' }
+  )
 );
 
-export default useReceiptStore;
+export default useRecipeStore
