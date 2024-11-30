@@ -1,0 +1,159 @@
+/* African-inspired color palette */
+:root {
+  --primary-color: #FBC02D; /* Gold */
+  --secondary-color: #388E3C; /* Green */
+  --accent-color: #D32F2F; /* Red */
+  --text-color: #212121; /* Black */
+  --background-color: #FAF8F0; /* Light beige */
+  --button-color: #0288D1; /* Blue for contrast */
+}
+
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header section */
+h1, h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin: 0% 20% 0% 20%;
+}
+
+/* Form styles */
+form {
+  max-width: 600px;
+  margin: 0% 20% 0% 20%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Label and Input styles */
+label {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Button styles */
+button {
+  background-color: var(--button-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Receipts List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  background-color: var(--secondary-color);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: var(--primary-color);
+}
+
+/* Adding subtle African pattern background (Optional) */
+body {
+  background-image: url('https://www.transparenttextures.com/patterns/circuit-board.png');
+  background-repeat: repeat;
+}
+
+/* Receipt List Container */
+.receipt-list {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: var(--primary-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-list h2 {
+  margin-bottom: 15px;
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Receipt Item Styles */
+.receipt-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: var(--secondary-light);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+}
+
+.receipt-item h3 {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.receipt-item p {
+  margin: 5px 0;
+  color: var(--text-dark);
+}
+
+/* Remove Button */
+.remove-button {
+  background-color: var(--error-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+  background-color: var(--error-dark);
+}
