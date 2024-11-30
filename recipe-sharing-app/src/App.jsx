@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import RecipeList from './RecipeList';
-import RecipeDetails from './RecipeDetails';
+import RecipeList from './components/RecipeList';
+import RecipeDetails from './components/RecipeDetails';
 import AddRecipeForm from './components/AddRecipeForm';
+import  './App.css'
 
 function App() {
   return (
