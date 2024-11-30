@@ -1,5 +1,5 @@
 import React from 'react'
-import  useReceiptStore  from '../store/useReceiptStore'
+import  useReceiptStore  from './recipeStore'
 
 
 const ReceiptList = () => {

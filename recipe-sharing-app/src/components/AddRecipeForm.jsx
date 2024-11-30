@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import useReceiptStore from '../store/useReceiptStore';
+import useReceiptStore from './recipeStore';
 
 const AddReceiptForm = () => {
     const [receipt, setReceipt] = useState({
