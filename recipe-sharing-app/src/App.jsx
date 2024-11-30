@@ -9,8 +9,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
+      <Route path="/add-recipe" element={<AddRecipeForm />} />
         <Route path="/" exact element={<RecipeList />} />
-        <Route path="/recipe/:id" element={<RecipeDetails />} />
+        <Route path="/recipe/:recipeId" element={<RecipeDetails />} />
         <Route path="/favorites" element={<FavoritesList />} />  {/* Route for favorites */}
         <Route path="/recommendations" element={<RecommendationsList />} />  {/* Route for recommendations */}
       </Routes>
