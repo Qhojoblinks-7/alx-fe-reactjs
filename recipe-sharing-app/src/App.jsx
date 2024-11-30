@@ -1,5 +1,5 @@
 import React from 'react';
-import RecipeForm from './components/AddRecipeForm';
+import AddRecipeForm from './components/AddRecipeForm';
 import RecipeList from './components/RecipeList';
 import './App.css';
 
@@ -11,7 +11,7 @@ const App = () => {
         <p>Share and manage your receipts with ease, inspired by African design!</p>
       </header>
       <main>
-        <RecipeForm />
+        <AddRecipeForm />
         <RecipeList /> {/* Add ReceiptList component here */}
       </main>
       <footer className="app-footer">
