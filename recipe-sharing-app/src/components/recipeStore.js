@@ -7,9 +7,10 @@ const useReceiptStore = create(
         (set) => ({
             receipts: [],
             //function to add a new receipt
-            addReceipt: (receipt) => set((state) => ({receipts: [...state.receipts, receipt] })),
+            addRecipe: (receipt) => set((state) => ({receipts: [...state.receipts, receipt] })),
             //function tro remove a receipt by index
             removeReceipt: (index) => set((state) => ({receipts: state.receipts.filter((_, i) => i !== index) } )),
+            setRecipes: (recipes) => set({ recipes })
 
         }),
         {
