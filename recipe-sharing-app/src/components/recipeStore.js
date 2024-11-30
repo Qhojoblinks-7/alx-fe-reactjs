@@ -15,7 +15,7 @@ const useRecipeStore = create(
         }),
         {
             name: 'receipt-storage', //name for localStorage
-            getStorage: () => localStorage, //specify the the storege (loocalStorage in this case)
+            getStorage: () => localStorage, 
         }
     )
 );
