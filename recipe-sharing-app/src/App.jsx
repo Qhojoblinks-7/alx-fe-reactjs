@@ -1,6 +1,6 @@
 import React from 'react';
-import ReceiptForm from './components/AddReceiptForm';
-import ReceiptList from './components/ReceiptList';
+import ReceiptForm from './components/AddRecipeForm';
+import ReceiptList from './components/RecipeList';
 import './App.css';
 
 const App = () => {
