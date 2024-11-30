@@ -1,28 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
-import AddRecipeForm from './components/AddRecipeForm';
-import  './App.css'
+import FavoritesList from './components/FavoritesList';  // Import FavoritesList
+import RecommendationsList from './components/RecommendationsList';  // Import RecommendationsList
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <div>
-        <h1>Recipe Sharing App</h1>
-        <Routes>
-          <Route path="/" element={<RecipeList />} />
-          <Route path="/recipe/:id" element={<RecipeDetails />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<RecipeList />} />
+        <Route path="/recipe/:id" element={<RecipeDetails />} />
+        <Route path="/favorites" element={<FavoritesList />} />  {/* Route for favorites */}
+        <Route path="/recommendations" element={<RecommendationsList />} />  {/* Route for recommendations */}
+      </Routes>
     </Router>
   );
-}
-
-// Wrapper component to pass recipeId from URL params
-const RecipeDetailsWrapper = () => {
-  const { id } = useParams();
-  return <RecipeDetails recipeId={Number(id)} />;
 };
 
 export default App;
