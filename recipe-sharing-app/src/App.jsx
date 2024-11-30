@@ -8,11 +8,13 @@ import  './App.css'
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<RecipeList />} />
-        <Route path='/Add Recipe Form' element={<AddRecipeForm />} />
-        <Route path="/recipe/:id" element={<RecipeDetailsWrapper />} />
-      </Routes>
+      <div>
+        <h1>Recipe Sharing App</h1>
+        <Routes>
+          <Route path="/" element={<RecipeList />} />
+          <Route path="/recipe/:id" element={<RecipeDetails />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
