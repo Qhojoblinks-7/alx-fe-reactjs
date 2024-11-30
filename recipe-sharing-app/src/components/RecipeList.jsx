@@ -1,9 +1,9 @@
 import React from 'react'
-import  useReceiptStore  from './recipeStore'
+import  useRecipeStore  from './recipeStore'
 
 
 const ReceiptList = () => {
-    const receipts = useReceiptStore(state => state.receipts);
+    const receipts = useRecipeStore(state => state.receipts);
 
 
     return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import useReceiptStore from './recipeStore';
+import useRecipeStore from './recipeStore';
 
 const AddReceiptForm = () => {
     const [receipt, setReceipt] = useState({
@@ -12,7 +12,7 @@ const AddReceiptForm = () => {
    
     
     //Access receipts and the function to add a new receipt from the zustand store
-    const {receipts, addReceipt, removeReceipt} = useReceiptStore();
+    const {receipts, addReceipt, removeReceipt} = useRecipeStore();
 
     //handle changes to the input fields
     const handleChange = (e) => {

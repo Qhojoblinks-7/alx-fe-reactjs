@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import {persist } from 'zustand/middleware'
 
 //define the store for managing the receipts
-const useReceiptStore = create(
+const useRecipeStore = create(
     persist(
         (set) => ({
             receipts: [],
