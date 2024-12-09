@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "image": "https://via.placeholder.com/150",
+        "ingredients": null,
+        "instructions": null,
+        "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+        "title": "Spaghetti Carbonara"
+    },
+    {
+        "id": 2,
+        "image": "https://via.placeholder.com/150",
+        "ingredients": null,
+        "instructions": null,
+        "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
+        "title": "Chicken Tikka Masala"
+    },
+    {
+        "id": 3,
+        "image": "https://via.placeholder.com/150",
+        "ingredients": null,
+        "instructions": null,
+        "summary": "A healthy mix of vegetables tossed in a savory soy sauce-based glaze.",
+        "title": "Vegetable Stir Fry"
+    },
+    {
+        "id": 4,
+        "image": "https://via.placeholder.com/150",
+        "ingredients": null,
+        "instructions": null,
+        "summary": "A creamy and hearty Russian dish with beef and mushrooms served over noodles.",
+        "title": "Beef Stroganoff"
+    },
+    {
+        "id": 5,
+        "image": "https://via.placeholder.com/150",
+        "ingredients": null,
+        "instructions": null,
+        "summary": "A simple yet flavorful pizza with fresh mozzarella, basil, and tomato sauce.",
+        "title": "Margarita Pizza"
+    },
+    {
+        "id": 6,
+        "image": "https://via.placeholder.com/150",
+        "ingredients": null,
+        "instructions": null,
+        "summary": "A delicious baked salmon with a zesty lemon and garlic marinade.",
+        "title": "Lemon Garlic Salmon"
+    },
+    {
+        "id": 7,
+        "image": "https://via.placeholder.com/150",
+        "ingredients": null,
+        "instructions": null,
+        "summary": "A rich, molten chocolate cake perfect for dessert lovers.",
+        "title": "Chocolate Lava Cake"
+    },
+    {
+        "id": 8,
+        "image": "https://via.placeholder.com/150",
+        "ingredients": null,
+        "instructions": null,
+        "summary": "A crisp romaine salad with Caesar dressing, croutons, and Parmesan cheese.",
+        "title": "Caesar Salad"
+    },
+    {
+        "id": 9,
+        "image": "https://via.placeholder.com/150",
+        "ingredients": null,
+        "instructions": null,
+        "summary": "Flavor-packed shrimp tacos with tangy slaw and spicy crema.",
+        "title": "Shrimp Tacos"
+    },
+    {
+        "id": 10,
+        "image": "https://via.placeholder.com/150",
+        "ingredients": null,
+        "instructions": null,
+        "summary": "A fragrant and spicy Thai curry made with green curry paste, coconut milk, and fresh herbs.",
+        "title": "Thai Green Curry"
+    },
+    {
+        "id": 11,
+        "image": "/images/pasta.jpg",
+        "ingredients": [
+            "Pasta",
+            "Tomato Sauce",
+            "Garlic",
+            "Basil"
+        ],
+        "instructions": "Boil pasta, heat sauce, and mix with garlic and basil.",
+        "summary": null,
+        "title": "Pasta with Tomato Sauce"
+    },
+    {
+        "id": 12,
+        "image": "/images/chicken-curry.jpg",
+        "ingredients": [
+            "Chicken",
+            "Curry Powder",
+            "Rice"
+        ],
+        "instructions": "Cook chicken with curry powder, serve with rice.",
+        "summary": null,
+        "title": "Chicken Curry"
+    }
+]
