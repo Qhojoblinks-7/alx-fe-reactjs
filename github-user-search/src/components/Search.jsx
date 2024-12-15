@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { searchUsers } from '../services/GitHubAPI';
-import '../index.css'
+import '../index.css';
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -161,4 +161,3 @@ const Search = () => {
 };
 
 export default Search;
-
