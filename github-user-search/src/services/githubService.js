@@ -1,23 +1,29 @@
 import axios from 'axios';
 
-// Fetch user data by username
-export const fetchUserData = async (username) => {
-  try {
-    const response = await axios.get(`https://api.github.com/users/${username}`);
-    return response.data; // Returns detailed user data
-  } catch (error) {
-    console.error('Error fetching user data:', error);
-    throw error; // Propagate the error for handling in the calling component
-  }
-};
 
-// Advanced user search
-export const searchUsers = async (query, page = 1) => {
+// Get the token from environment variables
+const GITHUB_TOKEN = process.env.VITE_GITHUB_API_KEY;
+
+// if (typeof process !== 'undefined') {
+//     console.log(process.env.NODE_ENV);
+//   } else {
+//     console.log("Environment variable not available.");
+//   }
+  
+
+const githubService = async (query, page = 1) => {
   try {
-    const response = await axios.get(`https://api.github.com/search/users?q=${query}&page=${page}`);
-    return response.data.items; // Returns an array of users
+    const response = await axios.get('https://api.github.com/search/users', {
+      params: { q: query, page },
+      headers: {
+        Authorization: `Bearer ${GITHUB_TOKEN}`,
+      },
+    });
+    return response.data;
   } catch (error) {
-    console.error('Error searching users:', error);
+    console.error('Error fetching data from GitHub API:', error);
     throw error;
   }
 };
+
+export default githubService;
