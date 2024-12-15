@@ -13,7 +13,7 @@ const githubService = async (searchTerm, location = '', minRepos = '', page = 1)
       .filter(Boolean)
       .join('+');
 
-    const response = await axios.get('https://api.github.com/search/users', {
+    const response = await axios.get('https://api.github.com/search/users?q', {
       params: { q: query, page },
       headers: {
         Authorization: `Bearer ${GITHUB_TOKEN}`,
